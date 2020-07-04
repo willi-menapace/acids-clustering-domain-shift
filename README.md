@@ -87,6 +87,12 @@ The state of each training process can be monitored with
 
 `tensorboard --logdir results/<results_dir>/runs`
 
-### 5. Acknowledgements
+### 5. Data
+
+The PACS, Office31 and Office-Home datasets must be placed under the `data` directory and each image must be resized to the resolution of 150x150px. For conveniency, we provide an already configured version of each dataset.
+
+Google Drive: [link](https://drive.google.com/file/d/12wzzR_Vn5tVocfZ-SnI5W6cqGqseqNYv/view?usp=sharing).
+
+### 6. Acknowledgements
 
 We thank [IIC](https://arxiv.org/abs/1807.06653) for the initial [codebase](https://github.com/xu-ji/IIC).
