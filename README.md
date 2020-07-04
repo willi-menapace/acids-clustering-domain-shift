@@ -35,6 +35,7 @@ In the second phase, we perform adaptation to the target domain using a variant 
 
 ## 3. Results
 
+### 3.1 Numerical Evaluation
 
 <p align="center">
     <img src="./imgs/pacs_results.png" width="700"> <br />
@@ -52,5 +53,14 @@ In the second phase, we perform adaptation to the target domain using a variant 
     <img src="./imgs/office_home.png" width="600"> <br />
     <em> 
     Table 3. Comparison of the proposed approach with SOTA on the Office-Home dataset. Accuracy (%) on target domain.
+    </em>
+</p>
+
+### 3.1 Qualitative Evaluation
+
+<p align="center">
+    <img src="./imgs/tsne.png"> <br />
+    <em> 
+    Figure 3. Evolution of the feature space during training on PACS with Art, Cartoon and Photo as the source domains and Sketch as the target domain. The first two rows depict feature evolution during training on the source domains, the last row depicts the feature space after adaptation to the target domain. In the first column, color represents the domain, while in the others, color represents the ground truth class of each point.
     </em>
 </p>
