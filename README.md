@@ -65,6 +65,28 @@ In the second phase, we perform adaptation to the target domain using a variant 
     </em>
 </p>
 
-### Acknowledgements
+### 4. Configuration and Execution
+
+We provide a Conda environment that we recommend for code execution. The environment can be recreated by executing
+
+`conda env create -f environment.yml`
+
+Activate the environment using
+
+`conda activate acids`
+
+Execution of the model is composed of two phases. The first consists in training on the source domains and is performed with the following command
+
+`python -m codebase.scripts.cluster.source_training --config config/<source_training_config_file>`
+
+Once training on the source domains is completed, adaptation to the target domain is performed with the following command. Note that the first execution will only create the results directory and return an error. A valid checkpoint named `start.pth.tar` originating from the source domain training phase must inserted in the newly created directory and will be taken as the starting point from which to perform adaptation to the target domain.
+
+`python -m codebase.scripts.cluster.target_adaptation --config config/<target_adaptation_config_file>`
+
+The state of each training process can be monitored with
+
+`tensorboard --logdir results/<results_dir>/runs`
+
+### 5. Acknowledgements
 
 We thank [IIC](https://arxiv.org/abs/1807.06653) for the initial [codebase](https://github.com/xu-ji/IIC).
