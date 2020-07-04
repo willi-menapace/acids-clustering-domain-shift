@@ -64,3 +64,7 @@ In the second phase, we perform adaptation to the target domain using a variant 
     Figure 3. Evolution of the feature space during training on PACS with Art, Cartoon and Photo as the source domains and Sketch as the target domain. The first two rows depict feature evolution during training on the source domains, the last row depicts the feature space after adaptation to the target domain. In the first column, color represents the domain, while in the others, color represents the ground truth class of each point.
     </em>
 </p>
+
+### Acknowledgements
+
+We thank [IIC](https://arxiv.org/abs/1807.06653) for the initial [codebase](https://github.com/xu-ji/IIC).
