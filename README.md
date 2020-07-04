@@ -65,6 +65,22 @@ In the second phase, we perform adaptation to the target domain using a variant 
     </em>
 </p>
 
+<p align="center">
+    <img src="./imgs/elephant_pacs_cluster.png"> <br />
+    <em> 
+    Figure 4. Clusters corresponding to the PACS "Elephant" class from Art, Cartoon, Photo and Sketch domains.
+    </em>
+</p>
+
+<p align="center">
+    <img src="./imgs/office31_calculator_cluster.png" width="900"> <br />
+    <em> 
+    Figure 4. Clusters corresponding to the Office31 "Calculator" class from Amazon, DSLR and Webcam domains.
+    </em>
+</p>
+
+
+
 ### 4. Configuration and Execution
 
 We provide a Conda environment that we recommend for code execution. The environment can be recreated by executing
