@@ -1,7 +1,7 @@
 # Learning to Cluster under Domain Shift
 
 <p align="center">
-    <img src="./imgs/teaser.png"/> <br />
+    <img src="./imgs/teaser2.png"/> <br />
     <em> 
     Figure 1. Illustration of the proposed ACIDS framework for Unsupervised Clustering under Domain Shift.
     </em>
