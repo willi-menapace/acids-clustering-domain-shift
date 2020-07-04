@@ -1,0 +1,91 @@
+{
+  "model_ind": "sketch_target_adaptation",
+  "out_root": "results",
+  "opt": "Adam",
+  "lr": 0.0001,
+  "wd": 0.0,
+
+  "domain_datasets": ["data/pacs/cartoon_resized", "data/pacs/art_painting_resized", "data/pacs/photo_resized"],
+  "test_datasets": ["data/pacs/sketch_resized"],
+  "gt_k": 7,
+  "num_steps": 500000000,
+  "batch_sz": 162,
+  "num_dataloaders": 1,
+  "restart": true,
+
+  "domain_cluster_lambda": 10.0,
+  "logit_variance_lambda": 0.0,
+  "visualization_epochs": 60,
+  "domain_specific_bn_affine": false,
+
+  "save_freq": 6,
+  "evaluation_epochs": 6,
+  "head_A_first":  true,
+
+  "encoder_arch": "DialResNet18TwoHead",
+  "encoder_features_count": 512,
+
+  "output_k_A": 49,
+  "output_k_B": 7,
+  "standard_image_size": [150, 150],
+  "lamb": 1.0,
+
+  "double_eval": true,
+  "num_sub_heads": 5,
+
+  "joint_alpha": 0.7,
+
+  "dropout_probability": 0.0,
+
+  "batchnorm_track": true,
+
+  "include_rgb": false,
+  "input_sz": 64,
+  "tf1_center_crop": false,
+  "demean": false,
+  "data_mean": [],
+  "data_std": [],
+  "per_img_demean": false,
+  "crop_orig": true,
+
+  "transforms": [{
+    "no_flip": false,
+    "rand_crop_sz": 100,
+    "fluid_warp": false,
+    "cutout": false,
+    "cutout_p": 0.5,
+    "cutout_holes": 1,
+    "cutout_max_box": 0.5
+  }, {
+    "no_flip": false,
+    "rand_crop_sz": 100,
+    "fluid_warp": false,
+    "cutout": false,
+    "cutout_p": 0.5,
+    "cutout_holes": 1,
+    "cutout_max_box": 0.5
+  }, {
+    "no_flip": false,
+    "rand_crop_sz": 100,
+    "fluid_warp": false,
+    "cutout": false,
+    "cutout_p": 0.5,
+    "cutout_holes": 1,
+    "cutout_max_box": 0.5
+  }],
+
+  "refinement_method": "fixmatch",
+  "refinement_transforms": [{
+    "no_flip": false,
+    "rand_crop_sz": 110,
+    "fluid_warp": true,
+    "rand_crop_szs_tf": [90, 110, 135],
+    "rot_val": 37,
+    "cutout": false,
+    "cutout_p": 0.5,
+    "cutout_holes": 1,
+    "cutout_max_box": 0.5
+  }],
+
+  "plot_layers": false
+}
