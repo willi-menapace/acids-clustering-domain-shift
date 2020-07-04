@@ -32,3 +32,25 @@ In the second phase, we perform adaptation to the target domain using a variant 
     Figure 2. Illustration of the proposed ACIDS method for Unsupervised Clustering under Domain Shift setting. (Left) training on the source domains, (Right) adaptation to the target domain
     </em>
 </p>
+
+## 3. Results
+
+
+<p align="center">
+    <img src="./imgs/pacs_results.png" width="700"> <br />
+    <em> 
+    Table 1. Comparison of the proposed approach with SOTA on the PACS dataset. Accuracy (%) on target domain. Methods with source supervision are provided as upper bounds. MS denotes multi source DA methods.
+    </em>
+</p>
+<p align="center">
+    <img src="./imgs/office31_results.png" width="500"> <br />
+    <em> 
+    Table 2. Comparison of the proposed approach with SOTA on the Office31 dataset. Accuracy (%) on target domain.
+    </em>
+</p>
+<p align="center">
+    <img src="./imgs/office_home.png" width="600"> <br />
+    <em> 
+    Table 3. Comparison of the proposed approach with SOTA on the Office-Home dataset. Accuracy (%) on target domain.
+    </em>
+</p>
