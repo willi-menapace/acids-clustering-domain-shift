@@ -111,6 +111,24 @@ The PACS, Office31 and Office-Home datasets must be placed under the `data` dire
 
 Google Drive: [link](https://drive.google.com/file/d/12wzzR_Vn5tVocfZ-SnI5W6cqGqseqNYv/view?usp=sharing).
 
-## 6. Acknowledgements
+## 6. Citation
+
+```
+@inproceedings{menapace2020learning,
+  author    = {Willi Menapace and
+               St{\'{e}}phane Lathuili{\`{e}}re and
+               Elisa Ricci},
+  title     = {Learning to Cluster Under Domain Shift},
+  booktitle = {Computer Vision - {ECCV} 2020 - 16th European Conference, Glasgow,
+               UK, August 23-28, 2020, Proceedings, Part {XXVIII}},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {12373},
+  pages     = {736--752},
+  publisher = {Springer},
+  year      = {2020}
+}
+```
+
+## 7. Acknowledgements
 
 We thank [IIC](https://arxiv.org/abs/1807.06653) for the initial [codebase](https://github.com/xu-ji/IIC).
